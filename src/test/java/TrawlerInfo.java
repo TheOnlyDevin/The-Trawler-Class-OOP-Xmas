@@ -1,12 +1,12 @@
-public class TrawlerApp {
+public class TrawlerInfo {
     private String name;
     private String transponder;
     private String type;
 
-    public TrawlerApp() {
+    public TrawlerInfo() {
     }
 
-   public TrawlerApp(String name, String transponder, String type) {
+   public TrawlerInfo(String name, String transponder, String type) {
         this.name =name;
         this.transponder = transponder;
         this.type = type;
@@ -34,4 +34,17 @@ public class TrawlerApp {
     public void setType(String type) {
         this.type = type;
     }
+
+
+    @Override
+    public String Trawlerclass() {
+        return "TrawlerApp{" +
+                "name='" + name + '\'' +
+                ", transponder='" + transponder + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
+
+
+
